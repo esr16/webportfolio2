@@ -2,6 +2,7 @@
 "use client";        
 import {useState} from "react";      
 import Link from "next/link";
+import "./accueilpage.css";
 
 export default function Accueil() {
   const [open, setOpen] = useState(false);  
