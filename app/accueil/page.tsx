@@ -1,3 +1,8 @@
 export default function Accueil() {
-  return <h1>Page Accueil</h1>
+  return (
+    <main>
+      <h1>ACCUEIL OK C'est bon</h1>
+    </main>
+  )
+
 }
