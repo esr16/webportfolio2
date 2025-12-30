@@ -1,0 +1,74 @@
+.card-project-container {
+  max-width: 28rem;
+  margin: 0 auto;
+}
+
+.card-project {
+  background-color: #1e293b;
+  border: 2px solid #475569;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.card-project-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.card-project-separator {
+  border-top: 1px solid #475569;
+  margin-bottom: 1.5rem;
+}
+
+.card-project-description {
+  color: #e2e8f0;
+  text-align: center;
+  line-height: 1.625;
+  margin-bottom: 1.5rem;
+}
+
+.card-project-technologies {
+  color: #cbd5e1;
+  text-align: center;
+  line-height: 1.625;
+  margin-bottom: 1.5rem;
+}
+
+.card-project-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-project-button {
+  background-color: #e2e8f0;
+  color: #1e293b;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.card-project-button:hover {
+  background-color: white;
+}
+
+@keyframes glow {
+    0%, 100% {
+        filter: drop-shadow(0 0 20px rgba(78, 205, 196, 0.5));
+    }
+    50% {
+        filter: drop-shadow(0 0 40px rgba(78, 205, 196, 0.8));
+    }
+}
+
+.card-project:hover {
+    animation: glow 3s ease-in-out infinite;
+}

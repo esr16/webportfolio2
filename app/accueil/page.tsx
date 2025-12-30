@@ -1,78 +1,42 @@
-
-"use client";        
-import {useState} from "react";      
+"use client";
+import { useState } from "react";
 import Link from "next/link";
 import "./accueilpage.css";
 
 export default function Accueil() {
-  const [open, setOpen] = useState(false);  
+  const [open, setOpen] = useState(false);
+
   return (
     <>
 
-        <nav className = "menu">
-        <Link href="home.html">Home</Link>
-        <Link href="about.html">About</Link>
-        <Link href="projects.html">Projects</Link>
-        <Link href="contact.html">Contact</Link>
-        </nav>
-
-        <h1 className = "projectsTitle">My Projects</h1>
-
-        <article className="project1">
-        <h1>Supervision</h1>
-        <section className="Type1">
-            <h3>Type of Project</h3>
-            <p> Internship work</p>
-        </section>
-        <section className="Techno1">
-            <h3>Technologies & Tools used</h3>
-            <p>Zabbix - Docker - Linux - SNMP </p>
-        </section>
-        <section className="sumup1">
-            <h3>Sum up</h3>
-            <p> Deployment of a network supervision solution
-            based on Zabbix in order to monitor a client’s devices
-            such as switches and routers and alert in cas of outage
-            or malfunction</p>
-        </section>
-        <section className="actions1">
-            <h3>Actions</h3>
-            <ul>
-            <li> Installation and configuration of Zabbix via Docker on a Linux environment</li>
-            <li> Configuration of hosts via SNMP on Zabbix</li>
-            <li> Setting up of Triggers and threshold system</li>
-            <li> Creation and management of a user-friendly dashboard for non-technical user</li>
-            <li> technical documentation for the company</li>
-            </ul>
-        </section>
-        <section className="skills1">
-            <h3>Skills</h3>
-            <ul>
-            <li> Networking</li>
-            <li> Supervision</li>
-            <li> Zabbix</li>
-            <li> Linux</li>
-            <li> Docker</li>
-            <li> SNMP</li>
-            <li> Dashboard designing</li>
-            </ul>
+      <article className="home">
+        <section className="mainTitle">
+          <h1>Hi, I am Elodie Simon</h1>
+          <p>Welcome to my portfolio</p>
         </section>
 
-            <button onClick={() => setOpen(!open)}>More details...</button>
-            
-            {open && (
-          <section className="details">
-            <p>
-              This project marked my first experience as an intern,
-              focusing on implementing a monitoring system for a client’s
-              network infrastructure using Zabbix.
-            </p>
-          </section>
-        )}
+        <section className="introduction">
+          <p>
+            Computer engineering student, exploring everything
+            from programming to networking. I’m driven by the ambition to imagine, design,
+            create tomorrow’s innovations
+          </p>
+          <button onClick={() => alert("CV Uploaded!")}>Upload CV</button>
+        </section>
+
+        <section className="about">
+          <h1>Who Am I</h1>
+          <p>
+            I am currently in the first year of the engineering cycle at <strong>CESI</strong>, an engineering school in <strong>Strasbourg, France</strong>, following two years of <strong>integrated preparatory studies</strong>, focusing on computer engineering. <br /><br />
+
+            As I am discovering various aspects of IT, I am shaping my own path in the field of engineering, mainly focusing on <strong>networking</strong> and <strong>supervision</strong>. <br /><br />
+
+            My goal is to become a <strong>competent</strong>, <strong>versatile</strong> and above all, <strong>trustworthy</strong> network engineer - someone who provides <strong>reliable</strong> solutions to her team and earns her company's confidence. <br /><br />
+
+            I believe today's engineers must remain curious and put their knowledge in the service of innovation, and take into account the economic, social and environmental challenges of our time.
+          </p>
+        </section>
       </article>
     </>
-
-
-            
-    );
+  );
 }
